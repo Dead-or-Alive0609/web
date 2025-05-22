@@ -1,0 +1,107 @@
+.book-recommend-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.book-recommend-page h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* 키워드 버튼 */
+.keyword-buttons {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.keyword-buttons button {
+  margin: 4px 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.keyword-buttons button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.keyword-buttons button:not(.active) {
+  background-color: #eee;
+  color: #000;
+}
+
+/* 도서 리스트 그리드 */
+.book-recommend-page .book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px; /* ✅ 카드 간 간격 넉넉하게 */
+  justify-content: center;
+}
+
+/* 카드 틀 */
+.book-recommend-page .book-item {
+  width: 180px;
+  height: 320px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.book-recommend-page .book-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ✅ 이미지 영역: contain으로 자르지 않고 축소 표시 */
+.book-recommend-page .book-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;  /* ✅ 이미지 전체가 보이도록 (잘리지 않게) */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: white; /* 배경 흰색으로 여백 자연스럽게 */
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.05); /* 약간의 경계감 */
+}
+
+/* 제목 */
+.book-recommend-page .book-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  height: 2.8em;
+  line-height: 1.4em;
+  margin-bottom: 4px;
+}
+
+/* 저자 */
+.book-recommend-page .book-author {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

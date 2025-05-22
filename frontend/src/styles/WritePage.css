@@ -1,0 +1,55 @@
+.board-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.board-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.board-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.board-container input[name="title"],
+.board-container input[name="bookName"],
+.board-container textarea[name="content"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.board-container textarea[name="content"] {
+  height: 200px;
+  line-height: 1.5;
+}
+
+.board-container button[type="submit"] {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.board-container button[type="submit"]:hover {
+  background-color: #555;
+}

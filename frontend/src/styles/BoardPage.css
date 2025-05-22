@@ -1,0 +1,64 @@
+.boardpage-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.boardpage-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.boardpage-container button {
+  float: right;
+  margin-bottom: 16px;
+  padding: 8px 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boardpage-container button:hover {
+  background-color: #2980b9;
+}
+
+.boardpage-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 15px;
+}
+
+.boardpage-container th,
+.boardpage-container td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.boardpage-container th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.boardpage-container tr:hover td {
+  background-color: #f9fcff;
+}
+
+.boardpage-container a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.boardpage-container a:hover {
+  text-decoration: underline;
+}
